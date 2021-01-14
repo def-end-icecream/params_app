@@ -3,5 +3,7 @@ Rails.application.routes.draw do
     get "/query_params_path" => "params_examples#query_params_action"
     get "/name_path" => "params_examples#name_action"
     get "/guessing_game_path" => "params_examples#guessing_game_action"
+
+    get "/segment_params_path/:wildcard" => "params_examples#segment_params_action"
   end
 end

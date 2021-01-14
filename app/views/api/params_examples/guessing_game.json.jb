@@ -1,1 +1,3 @@
-{ message: @output_message }
+{ 
+  message: @output_message 
+}

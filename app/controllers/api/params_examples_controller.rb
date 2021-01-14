@@ -31,4 +31,10 @@ class Api::ParamsExamplesController < ApplicationController
     render "guessing_game.json.jb"
   end
 
+  def segment_params_action
+    user_input = params[:wildcard]
+    @output_message = "Your url segment message is #{user_input}"
+    render "segment_params.json.jb"
+  end
+
 end
