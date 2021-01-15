@@ -8,5 +8,7 @@ Rails.application.routes.draw do
     get "/guessing_segment_path/:guess" => "params_examples#guessing_game_action"
 
     post "/body_params_path" => "params_examples#body_params_action"
+    post "/guessing_body_path" => "params_examples#guessing_game_action"
+    post "/credentials_body_path" => "params_examples#credentials_body_action"
   end
 end

@@ -43,4 +43,14 @@ class Api::ParamsExamplesController < ApplicationController
     render "body_params.json.jb"
   end
 
+  def credentials_body_action
+    username = params[:username]
+    password = params[:password]
+    @output_message = "Invalid credentials"
+    if username == "hugh" && password == "swordfish"
+      @output_message = "Valid credentials"
+    end
+    render "credentials_body.json.jb"
+  end
+
 end
